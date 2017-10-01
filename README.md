@@ -6,7 +6,7 @@ All the necessary config files in the .config directory. This is supposed to be 
 
 Just pull the directory directly in your .config directory
 
-> git clone git@github.com:kuwiano/.config.git ~/.config
+`git clone git@github.com:kuwiano/.config.git ~/.config`
 
 ## Contributing
 
