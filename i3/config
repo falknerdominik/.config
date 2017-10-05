@@ -241,3 +241,6 @@ exec --no-startup-id volumeicon
 
 # start network manager applet
 exec --no-startup-id nm-applet
+
+# set background
+exec --no-startup-id feh  --bg-scale '/home/dfalkner/.config/dotfiles/wallpaper.jpg' 
