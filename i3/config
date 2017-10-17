@@ -221,11 +221,11 @@ smart_gaps on
 #
 
 # start at login -> exec
-# exec --no-startup-id megasync
-# exec --no-startup-id compton
+exec --no-startup-id megasync
+exec --no-startup-id compton -D 5
 
 # set monitors
-# exec --no-startup-id /home/dfalkner/.dotfiles/dotfiles/screenlayouts/hgb.sh
+exec --no-startup-id /home/dfalkner/.config/dotfiles/screenlayouts/hgb.sh
 
 # set wallpaper
 # exec --no-startup-id ~/.fehbg
