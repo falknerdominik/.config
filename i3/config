@@ -134,7 +134,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+p restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+f exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# bindsym $mod+Shift+f exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 #
 # [Custom Modes]
@@ -200,6 +200,7 @@ bar {
 
 # set window to always be floating
 for_window[instance="XMathematica"] floating enable
+for_window[class="Galculator" instance="galculator"] floating enable
 
 #
 # [i3gaps]
@@ -225,9 +226,6 @@ exec --no-startup-id compton -D 5
 
 # set monitors
 exec --no-startup-id /home/dfalkner/.config/dotfiles/screenlayouts/hgb.sh
-
-# set wallpaper
-# exec --no-startup-id ~/.fehbg
 
 # set keymap
 exec_always --no-startup-id setxkbmap us -variant colemak -option caps:escape
